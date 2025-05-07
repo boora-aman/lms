@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:article_name",
  "creation": "2025-04-30 18:13:30.219539",
@@ -15,7 +16,9 @@
   "description",
   "section_break_j2om",
   "status",
-  "isbn"
+  "isbn",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -68,13 +71,26 @@
   {
    "fieldname": "section_break_j2om",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2025-05-01 00:51:59.609354",
+ "modified": "2025-05-08 01:06:58.808095",
  "modified_by": "Administrator",
  "module": "LMS",
  "name": "Article",
@@ -115,6 +131,7 @@
    "share": 1
   }
  ],
+ "route": "articles",
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
